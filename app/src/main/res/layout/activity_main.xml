@@ -3,16 +3,148 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
+
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/textmsg"
+        android:layout_width="352dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Your Payment is successful !!!"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/Linear1"
+        android:layout_width="309dp"
+        android:layout_height="107dp"
+        android:layout_below="@id/textmsg"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textmsg">
+
+        <com.saurabh.kotlin_assignment.EmotionalFaceView
+            android:id="@+id/emotionalFaceView"
+            android:layout_width="266dp"
+            android:layout_height="160dp"
+            android:layout_below="@+id/textmsg"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+
+            />
+
+        <RadioButton
+            android:layout_width="158dp"
+            android:layout_height="83dp"
+            android:layout_marginLeft="30dp"
+            android:text="Excellent"
+            android:textSize="20dp"
+            android:id="@+id/excellent"
+            android:layout_marginTop="10dp"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Linear2"
+        android:layout_width="304dp"
+        android:layout_height="143dp"
+        android:layout_below="@id/Linear1"
+        android:layout_marginStart="52dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Linear1">
+
+        <com.saurabh.kotlin_assignment.EmotionalFaceView
+            android:id="@+id/HappyView"
+            android:layout_width="254dp"
+            android:layout_height="155dp"
+            android:layout_below="@id/emotionalFaceView"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp" />
+
+        <RadioButton
+            android:layout_width="158dp"
+            android:layout_height="83dp"
+            android:layout_marginLeft="30dp"
+            android:text="Good"
+            android:textSize="20dp"
+            android:id="@+id/good"
+            android:layout_marginTop="10dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Linear3"
+        android:layout_width="299dp"
+        android:layout_height="122dp"
+        android:layout_below="@id/Linear2"
+        android:layout_marginStart="56dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Linear2">
+
+        <com.saurabh.kotlin_assignment.EmotionalFaceView
+            android:id="@+id/SadView"
+            android:layout_width="200dp"
+            android:layout_height="161dp"
+            android:layout_below="@id/HappyView"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp" />
+
+        <RadioButton
+            android:layout_width="158dp"
+            android:layout_height="83dp"
+            android:layout_marginLeft="30dp"
+            android:text="Boring"
+            android:textSize="20dp"
+            android:id="@+id/sad"
+            android:layout_marginTop="10dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/texttoast"
+        android:layout_width="378dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Linear3"
+        android:textSize="20sp"
+        android:text=""
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+    <TextView
+        android:id="@+id/outMsg"
+        android:layout_width="375dp"
+        android:layout_height="83dp"
+        android:layout_below="@id/Linear3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Please Rate the Payment Process !!!"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintTop_toBottomOf="@+id/texttoast" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
