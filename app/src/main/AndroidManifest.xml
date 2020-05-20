@@ -10,8 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".sigin_up.SignActivity"
-            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden">
+            android:name=".kotlinactivities.KotlinActivity"
+            android:configChanges="orientation|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,6 +25,13 @@
             android:name=".customcomponent.CustomCreation"
             android:configChanges="orientation|screenSize|screenLayout|keyboardHidden" />
 
+        <activity
+            android:name=".sigin_up.SignActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden" />
+
+        <activity
+            android:name=".kotlinactivities.TaskDescriptionActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden" />
 
     </application>
 
