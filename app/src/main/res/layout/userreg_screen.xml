@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFAB40"
+    >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:hint="UserName"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="21sp"
+        android:gravity="center"
+        android:elegantTextHeight="true"
+        android:paddingBottom="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:hint="Email-Id"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="21sp"
+        android:gravity="center"
+        android:elegantTextHeight="true"
+        android:paddingBottom="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password_register"
+        android:hint="Password"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="21sp"
+        android:elegantTextHeight="true"
+        android:gravity="center"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:shadowColor="@color/colorPrimary"
+        android:text="save"
+        android:layout_marginTop="20dp"
+        android:textSize="21sp"
+        android:background="#FF5252"
+        android:id="@+id/save"
+        />
+
+
+</LinearLayout>
